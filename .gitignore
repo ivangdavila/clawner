@@ -1,0 +1,11 @@
+*.log
+.DS_Store
+.env
+.env.local
+.next/
+demo-data.ts
+dist/
+node_modules/
+packages/dashboard/app/demo-data.ts
+packages/dashboard/app/page-demo.tsx
+page-demo.tsx

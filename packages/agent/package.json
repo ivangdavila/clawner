@@ -1,0 +1,42 @@
+{
+  "name": "clawner",
+  "version": "0.1.2",
+  "description": "Remote orchestrator for OpenClaw agents",
+  "keywords": ["clawner", "openclaw", "ai", "agent", "orchestration", "remote", "management"],
+  "author": "Iván González <ivangdavila@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/ivangdavila/clawner#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivangdavila/clawner.git",
+    "directory": "packages/agent"
+  },
+  "bugs": {
+    "url": "https://github.com/ivangdavila/clawner/issues"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "clawner": "dist/cli.js"
+  },
+  "files": ["dist", "README.md"],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/ws": "^8.5.13",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}

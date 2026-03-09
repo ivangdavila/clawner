@@ -1,0 +1,16 @@
+{
+  "name": "clawner",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Remote orchestrator for OpenClaw agents - Dashboard + WebSocket server",
+  "scripts": {
+    "dev": "concurrently \"pnpm --filter server dev\" \"pnpm --filter dashboard dev\"",
+    "build": "pnpm -r build",
+    "server": "pnpm --filter server dev",
+    "dashboard": "pnpm --filter dashboard dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0",
+    "typescript": "^5.7.0"
+  }
+}
